@@ -30,6 +30,7 @@ Ensure the MongoDB database instance is running and accessible from the deployme
 *For access to the current database on MongoDb Atlas, IP whitelisting needs to be done.*
 
 For Frontend Deployment
-1) Go to android folder 
-2) run ./gradlew assembleRelease 
-3) Go to android/app/build/outputs/apk/release and copy and  upload app-release.apk
+1) Download the code from https://drive.google.com/file/d/1Mfb6a32JKXON4VXek-ISARMfqpckT-q_/view?usp=sharing
+2) Go to android folder 
+3) run ./gradlew assembleRelease 
+4) Go to android/app/build/outputs/apk/release and copy and  upload app-release.apk

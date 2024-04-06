@@ -1,4 +1,4 @@
-const Game = require('../schemas/gameSchema');
+/*const Game = require('../schemas/gameSchema');
 const mongoose = require('mongoose');
 
 const gameSchema = new mongoose.Schema({
@@ -26,7 +26,7 @@ module.exports = {
             res.status(500).json({ error: 'Error while fetching game' });
         }
     }
-};
+};*/
 
 
 

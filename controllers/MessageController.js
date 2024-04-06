@@ -1,4 +1,4 @@
-const Message = require('../schemas/messageSchema');
+/*const Message = require('../schemas/messageSchema');
 const mongoose = require('mongoose');
 
 const messageSchema = new mongoose.Schema({
@@ -34,4 +34,4 @@ module.exports = {
             res.status(500).json({ error: 'Error while fetching messages' });
         }
     }
-};
+};*/

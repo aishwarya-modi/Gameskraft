@@ -1,4 +1,4 @@
-const Chat = require('../schemas/chatSchema');
+/*const Chat = require('../schemas/chatSchema');
 const mongoose = require('mongoose');
 
 async function createChat(req, res) {
@@ -96,3 +96,4 @@ async function sendMessage(req, res) {
         res.status(500).json({ error: 'Error while sending message' });
     }
 }
+*/

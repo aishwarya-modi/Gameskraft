@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 async function createUser(req, res) {
     const { userID, latitude, longitude, userName, emailID, password, favoriteGenre, preferredPlatform, connections, games, geohash_1, geohash_2, geohash_3, geohash_4, geohash_5 } = req.body;
-    if (!userID || !latitude || !longitude || !userName || !emailID || !password || !favoriteGenre || !preferredPlatform || !connections || !games || !geohash_1 || !geohash_2 || !geohash_3 || !geohash_4 || !geohash_5) return res.status(400).json({ error: 'Request body missing' });
+    if (userID || latitude || longitude || userName || emailID || password || favoriteGenre || preferredPlatform || connections || games || geohash_1 || geohash_2 || geohash_3 || geohash_4 || geohash_5) return res.status(400).json({ error: 'Request body missing' });
 
     const newUser = new User({
         userID,

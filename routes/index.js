@@ -5,7 +5,7 @@ const UserController = require('../controllers/UserController');
 const GameController = require('../controllers/GameController');
 const MessageController = require('../controllers/MessageController');
 const ChatController = require('../controllers/chatController');
-const Chat = require('../schemas/chatSchema');
+//const Chat = require('../schemas/chatSchema');
 
 // routes for UserController
 router.post('/createUser', UserController.createUser);
@@ -17,14 +17,14 @@ router.delete('/deleteUser', UserController.deleteUser);
 router.get('/getMatches', MatchController.getMatches);
 
 //routes for GameController
-router.post('/createGame', GameController.createGame);
+/*router.post('/createGame', GameController.createGame);
 
 // routes for MessageController
 router.post('/createMessage', MessageController.createMessage);
 
 // routes for ChatController
 router.post('/createChat', ChatController.createChat);
-router.get('/getChat', ChatController.getChat);
+router.get('/getChat', ChatController.getChat);*/
 
 
 

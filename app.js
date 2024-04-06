@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
 mongoose.connect('mongodb+srv://aishwaryakumari5611:dfeaUZKc5mI2ZjQE@gameskraftcluster.agmqf7g.mongodb.net/', {
+mongoose.connect('mongodb+srv://Cluster40217:fVNccnRDb0Vf@cluster40217.ominmle.mongodb.net/', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

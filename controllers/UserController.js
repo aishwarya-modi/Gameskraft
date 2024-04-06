@@ -1,15 +1,22 @@
 const User = require('../schemas/usersDetails');
+const mongoose = require('mongoose');
 
 async function createUser(req, res) {
     const { latitude, longitude, userName, emailID } = req.body;
+    if (!res) return res.status(400).json({ error: 'Request body missing' });
+    const { userID, latitude, longitude, userName, emailID, password, favoriteGenre, preferredPlatform } = res;
 
     try {
         const user = await User.create({ latitude, longitude, userName, emailID });
+        const user = await User.create({ userID, latitude, longitude, userName, emailID, password, favoriteGenre, preferredPlatform, connections: [], games: [], geohash_1: '', geohash_2: '', geohash_3: '', geohash_4: '', geohash_5: '' });
         res.json(user);
     } catch (error) {
         res.status(500).json({ error: 'Error while creating new user' });
     }
 }
+
+
+
 
 
 async function updateUser(req, res) {
